@@ -1,11 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../styles/Customer.css"; 
+import "../styles/Customer.css";
 
 const Customer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    // Captura el valor actual de sectionRef.current al inicio del efecto
+    const currentSection = sectionRef.current; // <-- CAMBIO AQUÍ
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -17,16 +20,18 @@ const Customer = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    // Usa la variable capturada 'currentSection'
+    if (currentSection) { // <-- CAMBIO AQUÍ
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      // Usa la variable capturada 'currentSection' en la limpieza también
+      if (currentSection) { // <-- CAMBIO AQUÍ
+        observer.unobserve(currentSection);
       }
     };
-  }, []);
+  }, []); // El array de dependencias vacío está bien aquí, ya que 'currentSection' es una instantánea.
 
   return (
     <section className="customer-section" ref={sectionRef}>
