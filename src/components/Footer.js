@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <p>Contacto: contacto@ejemplo.com</p>
       <div className="shortcuts">
-        <a href="#">Política de privacidad</a> | 
-        <a href="#">Términos y condiciones</a>
+        <a href="#contacto">Política de privacidad</a> | 
+        <a href="#contacto">Términos y condiciones</a>
       </div>
       <WhatsAppLink/>
     </footer>
