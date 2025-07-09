@@ -1,0 +1,6 @@
+1) inicializar el proyecto
+npm create-react-app paginademorevista
+
+2) npm install react-slick
+
+3) 

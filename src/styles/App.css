@@ -1,0 +1,14 @@
+body, html, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 30px; /* Debe ser igual o mayor al height del header */
+  height: calc(86vh - 60px);
+}
+

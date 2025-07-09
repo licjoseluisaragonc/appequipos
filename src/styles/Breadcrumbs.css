@@ -1,0 +1,42 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 1rem; /* o prueba con 16px, 20px, etc. */
+  margin-left: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.breadcrumb-link {
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: silver;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.breadcrumb-current {
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+

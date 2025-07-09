@@ -1,0 +1,97 @@
+.customer-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+}
+
+.customer-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title-line1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1B2680;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.title-line2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #16a34a; /* Verde */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.carousel-track {
+  display: flex;
+  white-space: nowrap;
+  width: max-content;
+}
+
+.carousel-item {
+  width: 400px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  opacity: 0.5;
+  max-height: 80%;
+  transition: opacity 0.3s;
+}
+
+.carousel-item img:hover {
+  opacity: 1;
+}
+
+/* Animaciones */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll-animation {
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes flipUp {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+.flip-in {
+  animation: flipUp 1s ease-out forwards;
+}
+
+.carousel-item img {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  max-height: 70%;
+  max-width: 70%;
+  object-fit: contain; 
+}
+

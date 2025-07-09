@@ -1,0 +1,12 @@
+.footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer .shortcuts a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}

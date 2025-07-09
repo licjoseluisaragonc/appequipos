@@ -1,0 +1,126 @@
+.homepage {
+  background: url('../resources/background-equipos.png') no-repeat center center;
+  background-size:cover;
+  background-position: 0cm top;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;    /* opcional: para alinear contenido verticalmente */
+  justify-content: center; /* opcional: para centrar contenido horizontalmente */
+}
+
+/* Capa oscura encima del fondo */
+.overlay {
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+}
+
+/* Hero principal */
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;  
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ddd;
+}
+
+/* Sección de características */
+.features {
+  background: transparent;
+  color:white;
+  padding: 30px 5px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  color: #000;
+}
+
+.feature-card {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.section-main{
+  height: 390px;
+}
+
+.section-quienes-somos,
+.section-nuestros-servicios {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+  color: #333;
+}
+
+.features h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #1B2680;
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #16a34a;
+}
+
+.customer-frame {
+  background-color: #fff;
+  padding: 60px 20px;
+}
