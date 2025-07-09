@@ -1,13 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
 import '../styles/Catalogo.css';
-
-// Imágenes locales
-import equipo1 from '../resources/fotosequipos/camaradigital/42mp/42mp.png';
-import equipo2 from '../resources/fotosequipos/camaradigital/72mp/72mp.png';
-import equipo3 from '../resources/fotosequipos/camarastermograficas/fluketi20/Fluke - Ti20.png';
-import equipo4 from '../resources/fotosequipos/camarastermograficas/htimodelo175/HTI-Modelo-175.png';
-import equipo5 from '../resources/fotosequipos/eddycurrent/bloquedecalibracion/Bloque de calibracion.png';
 
 const productos = [
   {
@@ -31,48 +23,8 @@ const productos = [
   // Puedes agregar más productos...
 ];
 
-const articulos = [
-  {
-    img: equipo1,
-    alt: 'Cámara digital 42mp',
-    descripcion: 'La Cámara Digital de 42 megapíxeles redefine la fotografía con un nivel de detalle y nitidez que la coloca por encima del estándar para cámaras compactas...',
-  },
-  {
-    img: equipo2,
-    alt: 'Cámara digital 72mp',
-    descripcion: 'La Cámara Digital de 72 megapíxeles está diseñada para quienes buscan una calidad de imagen extrema...',
-  },
-  {
-    img: equipo3,
-    alt: 'Cámara termográfica Fluke Ti20',
-    descripcion: 'La cámara termográfica Fluke Ti20 ofrece imágenes térmicas precisas y claras, ideal para mantenimiento industrial...',
-  },
-  {
-    img: equipo4,
-    alt: 'HTI Modelo 175',
-    descripcion: 'El modelo HTI-175 combina funcionalidad y precisión térmica para inspecciones rápidas y efectivas en campo...',
-  },
-  {
-    img: equipo5,
-    alt: 'Bloque de calibración Eddy Current',
-    descripcion: 'El bloque de calibración para ensayos por corrientes Eddy asegura mediciones precisas en pruebas no destructivas...',
-  }
-];
-
 const Catalogo = () => {
-  const imagenes = [equipo1, equipo2, equipo3,equipo4,equipo5];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000
-  };
-
-  return (
+   return (
     <div className="catalogo-container">
       <h2>Catálogo de Productos premium</h2>
       <div className="catalogo-grid">

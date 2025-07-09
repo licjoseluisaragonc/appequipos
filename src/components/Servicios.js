@@ -60,6 +60,7 @@ const Servicios = () => {
     service4: false,
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const elementRefs = {
     div1: useRef(null),
     div2: useRef(null),
@@ -88,7 +89,7 @@ const Servicios = () => {
         }, 300);
       }
     }
-  }, [serviceActive]);
+  }, [elementRefs, serviceActive]);
 
 
   const handleScroll = (id) => {
